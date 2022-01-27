@@ -5,6 +5,8 @@
       <list>
         <option value="$PROJECT_DIR$/MicroservicioUsuario/pom.xml" />
         <option value="$PROJECT_DIR$/MicroservicioEureka/pom.xml" />
+        <option value="$PROJECT_DIR$/MicroservicioZuul/pom.xml" />
+        <option value="$PROJECT_DIR$/MicroservicioCommon/pom.xml" />
       </list>
     </option>
   </component>
