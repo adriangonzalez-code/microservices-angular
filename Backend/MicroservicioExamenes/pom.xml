@@ -8,10 +8,10 @@
 		<version>2.6.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.smoothiemx.microservicio.curso.app</groupId>
-	<artifactId>microservicio-cursos</artifactId>
+	<groupId>com.smoothiemx.microservicio.examenes.app</groupId>
+	<artifactId>microservicio-examenes</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>microservicio-cursos</name>
+	<name>microservicio-examenes</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
@@ -30,6 +30,7 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>

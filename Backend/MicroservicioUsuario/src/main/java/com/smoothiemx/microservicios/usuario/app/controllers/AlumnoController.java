@@ -1,7 +1,7 @@
 package com.smoothiemx.microservicios.usuario.app.controllers;
 
 import com.smoothiemx.microservicio.common.alumnos.app.entity.Alumno;
-import com.smoothiemx.microservicio.common.app.controllers.CommonController;
+import com.smoothiemx.common.app.controllers.CommonController;
 import com.smoothiemx.microservicios.usuario.app.services.AlumnoService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,6 +11,11 @@ import java.util.Optional;
 
 @RestController
 public class AlumnoController extends CommonController<Alumno, AlumnoService> {
+
+    @GetMapping("/filtrar/{term}")
+    public ResponseEntity<?> filtrar(@PathVariable String term) {
+        return ResponseEntity.ok(service.findByNombreOrApellido(term));
+    }
 
     @PutMapping("/{id}")
     public ResponseEntity<?> editar(@RequestBody Alumno alumno, @PathVariable Long id) {

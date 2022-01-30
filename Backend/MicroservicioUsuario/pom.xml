@@ -48,8 +48,8 @@
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>com.smoothiemx.microservicio.common.app</groupId>
-			<artifactId>microservicio-common</artifactId>
+			<groupId>com.smoothiemx.common.app</groupId>
+			<artifactId>common</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>

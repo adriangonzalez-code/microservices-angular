@@ -1,4 +1,4 @@
-package com.smoothiemx.microservicio.common.app.services;
+package com.smoothiemx.common.app.services;
 
 import java.util.Optional;
 

@@ -1,6 +1,6 @@
-package com.smoothiemx.microservicio.common.app.controllers;
+package com.smoothiemx.common.app.controllers;
 
-import com.smoothiemx.microservicio.common.app.services.CommonService;
+import com.smoothiemx.common.app.services.CommonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

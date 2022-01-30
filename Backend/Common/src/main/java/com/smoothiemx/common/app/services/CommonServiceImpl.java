@@ -1,4 +1,4 @@
-package com.smoothiemx.microservicio.common.app.services;
+package com.smoothiemx.common.app.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.CrudRepository;

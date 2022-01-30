@@ -1,7 +1,7 @@
 package com.smoothiemx.microservicio.curso.app.controllers;
 
 import com.smoothiemx.microservicio.common.alumnos.app.entity.Alumno;
-import com.smoothiemx.microservicio.common.app.controllers.CommonController;
+import com.smoothiemx.common.app.controllers.CommonController;
 import com.smoothiemx.microservicio.curso.app.entity.Curso;
 import com.smoothiemx.microservicio.curso.app.services.CursoService;
 import org.springframework.http.HttpStatus;
@@ -55,5 +55,11 @@ public class CursoController extends CommonController<Curso, CursoService> {
         dbCurso.removeAlumno(alumno);
 
         return ResponseEntity.status(HttpStatus.CREATED).body(this.service.save(dbCurso));
+    }
+
+    @GetMapping("/alumno/{id}")
+    public ResponseEntity<?> buscarPorAlumnoId(@PathVariable Long id) {
+        Curso curso = service.findCursoByAlumnoId(id);
+        return ResponseEntity.ok(curso);
     }
 }
